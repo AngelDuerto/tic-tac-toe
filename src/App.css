@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e9f1f9; /* Light blue background */
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 320px; /* Minimum width to avoid shrinking */
+  min-height: 400px; /* Minimum height for better layout */
+  width: 100%;
+  max-width: 500px; /* Maximum width for larger screens */
+  height: auto; /* Ensure the height adjusts dynamically */
+}
+
+.game-board {
+  margin-bottom: 20px;
+}
+
+/* Board and Squares */
+.board-row {
+  display: flex;
+  margin: 5px;
+}
+
+.square {
+  margin: 3px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e9e9; 
+  border: 2px solid #383838; 
+  color: rgb(18, 115, 242);
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  border-radius: 6px;
+}
+
+.square:hover {
+  background-color: #7aaade; /* Darker blue when hovered */
+  transform: scale(1.05);
+}
+
+.square:focus {
+  outline: none;
+}
+
+/* Status and Move List */
+.status {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #026fe4; /* Dark blue text */
+}
+
+.game-info {
+  margin: 0 auto;
+}
+
+
+button {
+  width: 100%;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue button on hover */
+}
+
+button:focus {
+  outline: none;
+}
+
+.resetBtn{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+li::marker {
+  font-size: 15px;
+  color: #034fa0; 
+  font-weight: 600;
+}
